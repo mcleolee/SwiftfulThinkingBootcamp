@@ -11,6 +11,7 @@
 		975E08EC2A87B6D60067541F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08EB2A87B6D60067541F /* ContentView.swift */; };
 		975E08EE2A87B6D80067541F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975E08ED2A87B6D80067541F /* Assets.xcassets */; };
 		975E08F22A87B6D80067541F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975E08F12A87B6D80067541F /* Preview Assets.xcassets */; };
+		975E08F92A87BC200067541F /* SomeBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08F82A87BC200067541F /* SomeBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		975E08ED2A87B6D80067541F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975E08EF2A87B6D80067541F /* SwiftfulThinkingBootcamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftfulThinkingBootcamp.entitlements; sourceTree = "<group>"; };
 		975E08F12A87B6D80067541F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		975E08F82A87BC200067541F /* SomeBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				975E08E92A87B6D60067541F /* SwiftfulThinkingBootcampApp.swift */,
 				975E08EB2A87B6D60067541F /* ContentView.swift */,
+				975E08F82A87BC200067541F /* SomeBootcamp.swift */,
 				975E08ED2A87B6D80067541F /* Assets.xcassets */,
 				975E08EF2A87B6D80067541F /* SwiftfulThinkingBootcamp.entitlements */,
 				975E08F02A87B6D80067541F /* Preview Content */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				975E08EC2A87B6D60067541F /* ContentView.swift in Sources */,
+				975E08F92A87BC200067541F /* SomeBootcamp.swift in Sources */,
 				975E08EA2A87B6D60067541F /* SwiftfulThinkingBootcampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +265,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SwiftfulThinkingBootcamp/SwiftfulThinkingBootcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,6 +274,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SexyPussy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -282,7 +288,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ravin.SwiftfulThinkingBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SwiftfulThinkingBootcamp/SwiftfulThinkingBootcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -307,6 +314,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SexyPussy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,7 +328,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ravin.SwiftfulThinkingBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
