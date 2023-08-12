@@ -13,6 +13,8 @@ import SwiftUI
 struct TextBootcamp: View {
     
     let backgroundColor: Color = Color.red
+    @State var title: String = "this is my title"
+    
     
     var body: some View {
         // -------------------------------
@@ -208,17 +210,118 @@ struct TextBootcamp: View {
         // -------------------------------
         // --------- ScrollView ----------
         // -------------------------------
-        
-        ScrollView(.vertical, showsIndicators: false){
-            VStack{
-                ForEach(1..<9999) { index in
-                    Text("\(index)个欣欣～～")
-                }
-            }
-            
-        }
+//
+//        ScrollView(.vertical, showsIndicators: false){
+//            VStack{
+//                ForEach(1..<9999) { index in
+//                    Text("\(index)个欣欣～～")
+//                }
+//            }
+//
+//        }
         // 这里有一些模版，在视频最后，应该比较实用。
         
+        
+        // -------------------------------
+        // ---------- LazyVGrid ----------
+        // -------------------------------
+        
+        // -------------------------------
+        // ---------- ForEach() ----------
+        // -------------------------------
+        
+        // -------------------------------
+        // ---------- safeArea -----------
+        // -------------------------------
+        
+        // -------------------------------
+        // ---------- Button() -----------
+        // -------------------------------
+        
+        
+        
+//        VStack(spacing: 20){
+//            Text(title)
+//
+//            Button("Delete"){
+//                self.title = "Deleted!!"
+//            }
+//            .accentColor(.red)
+//
+//            Button(
+//                action: {self.title = "Saved!"},
+//                label: {Text("Save".uppercased())
+//                        .font(.headline)
+//                        .fontWeight(.heavy)
+//                        .foregroundColor(.white)
+//                        .padding()
+//                        .padding(.horizontal, 20)
+//                        .background(
+//                            Color.blue
+//                                .cornerRadius(15)
+//                                .shadow(radius: 10))
+//                })
+//
+//            Button(
+//                action: {self.title = "爱你～～"},
+//                label: {Circle()
+//                        .fill(Color.white)
+//                        .frame(width: 75, height: 75, alignment: .center)
+//                        .shadow(radius: 13)
+//                        .overlay(
+//                            Image(systemName: "heart.fill")
+//                                .font(.largeTitle)
+//                                .foregroundColor(Color.red))
+//
+//
+//                })
+//
+//            Button(
+//                action: {self.title = "不爱了！！！"},
+//                label: {Text("Finish".uppercased())
+//                        .font(.caption)
+//                        .bold()
+//                        .foregroundColor(.cyan)
+//                        .padding()
+//                        .padding(.horizontal, 10)
+//                        .background(
+//                            Capsule()
+//                                .stroke(Color.gray, lineWidth: 2)
+//                        )
+//
+//
+//                })
+//        }
+        // -------------------------------
+        // ---------- @State -------------
+        // -------------------------------
+        
+        ZStack{
+            // background
+            Color.cyan
+                .edgesIgnoringSafeArea(.all)
+            
+            // content
+            VStack(spacing: 20){
+                Text("Title")
+                    .font(.title)
+                Text("Count:1")
+                    .font(.headline)
+                    .underline()
+                
+                HStack(spacing: 20){
+                    Button("Button 1"){
+                        
+                    }
+                    
+                    Button("Button 2"){
+                        
+                    }
+                }
+                
+            }
+            .foregroundColor(.white)
+        }
         
     }
         
