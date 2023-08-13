@@ -14,6 +14,9 @@ struct _26_50_Bootcamp: View {
     
     @State var showSheet:Bool = false
     
+    @State var currentUserName:String?
+    @AppStorage("name") var currentUserName_AppStorage:String?
+    
     var body: some View {
         
         // --------------------------------
@@ -112,21 +115,50 @@ struct _26_50_Bootcamp: View {
         // ---------------------------------------------------------------
         // 在iphone和ipad上可能显示不一样
         
-        NavigationView(){
-            ScrollView{
-                
-                NavigationLink("Hello world", destination: Text("Second screen"))
-                NavigationLink("Hello world", destination: MyOtherScreen())
-                
-                Text("qwq")
-                Text("qwq")
-                Text("qwq")
+//        NavigationView(){
+//            // 在NavigationView()中不要使用NavigationView()了，应该用NavigationLink()
+//            ScrollView{
+//
+//                NavigationLink("Hello world", destination: Text("Second screen"))
+//                NavigationLink("Hello world", destination: MyOtherScreen())
+//
+//                Text("qwq")
+//                Text("qwq")
+//                Text("qwq")
+//            }
+//            .navigationTitle("All Inboxes")
+//            .navigationBarTitleDisplayMode(.automatic)
+//
+//
+//        }
+        
+        // #52
+        // ---------------------------------------------------------------
+        // ---------------------- AppStorage() -----------------------
+        // ---------------------------------------------------------------
+        
+        VStack(spacing: 20){
+//            Text(currentUserName ?? "add name here")
+            Text(currentUserName_AppStorage ?? "add name here")
+            
+//            if let name = currentUserName{
+//                Text(name)
+//            }
+            
+            if let name = currentUserName_AppStorage{
+                            Text(name)
+                        }
+            
+            Button("Save".uppercased()){
+                let name: String = "Emily"
+                currentUserName_AppStorage = name
+//                currentUserName = name
+//                UserDefaults.standard.set(name, forKey: "name")
             }
-            .navigationTitle("All Inboxes")
-            .navigationBarTitleDisplayMode(.automatic)
-            
-            
         }
+//        .onAppear(){
+//            currentUserName = UserDefaults.standard.string(forKey: "name")
+//        }
         
   
         
