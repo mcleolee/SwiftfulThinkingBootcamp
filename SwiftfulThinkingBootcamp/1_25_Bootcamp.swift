@@ -12,11 +12,19 @@ import SwiftUI
 
 struct TextBootcamp: View {
     
-    let backgroundColor: Color = Color.red
+    @State var backgroundColor: Color = Color.cyan
     @State var title: String = "this is my title"
+    @State var myTitle: String = " MY TITLE "
+    @State var count: Int = 0
     
+    @State var backgroundColor_1: Color = Color.pink
+    
+    @State var isStartingState: Bool = false
     
     var body: some View {
+        
+        
+        
         // -------------------------------
         // ------------- 文字 -------------
         // -------------------------------
@@ -296,33 +304,116 @@ struct TextBootcamp: View {
         // ---------- @State -------------
         // -------------------------------
         
-        ZStack{
-            // background
-            Color.cyan
-                .edgesIgnoringSafeArea(.all)
-            
-            // content
-            VStack(spacing: 20){
-                Text("Title")
-                    .font(.title)
-                Text("Count:1")
-                    .font(.headline)
-                    .underline()
-                
-                HStack(spacing: 20){
-                    Button("Button 1"){
-                        
-                    }
-                    
-                    Button("Button 2"){
-                        
-                    }
-                }
-                
+//        ZStack{
+//            // background
+//                backgroundColor
+//                .edgesIgnoringSafeArea(.all)
+//
+//            // content
+//            VStack(spacing: 20){
+//                Text(myTitle)
+//                    .font(.title)
+//                Text("Count:\(count)")
+//                    .font(.headline)
+//                    .underline()
+//
+//                HStack(spacing: 20){
+//                    Button("+"){
+//                        backgroundColor = .purple
+//                        myTitle = "1 was pressed"
+//                        count += 1
+//                    }
+//
+//                    Button("-"){
+//                        backgroundColor = .blue
+//                        myTitle = "2 was pressed"
+//                        count -= 1
+//                    }
+//                }
+//
+//            }
+//            .foregroundColor(.white)
+//        }
+        
+        // --------------------------------------------------
+        // ---------- Extract Functions & Views -------------
+        // --------------------------------------------------
+        
+//        ZStack{
+//            backgroundLayer
+//            contentLayer
+//        }
+        
+        // -----------------------------------------
+        // ---------- Extract Subviews -------------
+        // -----------------------------------------
+
+//        先跳过
+        
+        // -------------------------------
+        // ---------- @Binding -----------
+        // -------------------------------
+        
+        //        先跳过
+        
+        
+        // --------------------------------------------------
+        // ---------- Conditional Statement------------------
+        // --------------------------------------------------
+        
+        
+        // --------------------------------------------------
+        // ------------- Ternary Operators ------------------
+        // -------------------- 三元运算符 --------------------
+        // --------------------------------------------------
+        
+        VStack{
+            Button("button:\(isStartingState.description)"){
+                isStartingState.toggle()
             }
-            .foregroundColor(.white)
+            
+            
+                RoundedRectangle(cornerRadius: 14)
+                .fill(isStartingState ? Color.red : Color.blue)
+                    .frame(width: 200, height: 100)
+            
+            
         }
         
+        Spacer()
+        
+    }
+    
+    // --------------------------------------------------
+    // ---------- Extract Functions & Views -------------
+    // --------------------------------------------------
+    var backgroundLayer: some View{
+        backgroundColor_1.edgesIgnoringSafeArea(.all)
+    }
+    
+    var contentLayer: some View{
+        VStack{
+            Text("Title")
+                .font(.largeTitle)
+            
+            Button(action: {
+                buttonPressed()
+                
+            }, label: {
+                Text("press me")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.black)
+                    .cornerRadius(14)
+                
+                
+            })
+        }
+    }
+    
+    func buttonPressed(){
+        backgroundColor_1 = .yellow
     }
         
     

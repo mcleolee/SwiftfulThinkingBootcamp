@@ -11,7 +11,8 @@
 		975E08EC2A87B6D60067541F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08EB2A87B6D60067541F /* ContentView.swift */; };
 		975E08EE2A87B6D80067541F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975E08ED2A87B6D80067541F /* Assets.xcassets */; };
 		975E08F22A87B6D80067541F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975E08F12A87B6D80067541F /* Preview Assets.xcassets */; };
-		975E08F92A87BC200067541F /* SomeBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08F82A87BC200067541F /* SomeBootcamp.swift */; };
+		975E08F92A87BC200067541F /* 1_25_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08F82A87BC200067541F /* 1_25_Bootcamp.swift */; };
+		975E08FB2A8808710067541F /* 26_50_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E08FA2A8808710067541F /* 26_50_Bootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		975E08ED2A87B6D80067541F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975E08EF2A87B6D80067541F /* SwiftfulThinkingBootcamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftfulThinkingBootcamp.entitlements; sourceTree = "<group>"; };
 		975E08F12A87B6D80067541F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		975E08F82A87BC200067541F /* SomeBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeBootcamp.swift; sourceTree = "<group>"; };
+		975E08F82A87BC200067541F /* 1_25_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1_25_Bootcamp.swift; sourceTree = "<group>"; };
+		975E08FA2A8808710067541F /* 26_50_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 26_50_Bootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				975E08E92A87B6D60067541F /* SwiftfulThinkingBootcampApp.swift */,
 				975E08EB2A87B6D60067541F /* ContentView.swift */,
-				975E08F82A87BC200067541F /* SomeBootcamp.swift */,
+				975E08F82A87BC200067541F /* 1_25_Bootcamp.swift */,
+				975E08FA2A8808710067541F /* 26_50_Bootcamp.swift */,
 				975E08ED2A87B6D80067541F /* Assets.xcassets */,
 				975E08EF2A87B6D80067541F /* SwiftfulThinkingBootcamp.entitlements */,
 				975E08F02A87B6D80067541F /* Preview Content */,
@@ -143,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				975E08EC2A87B6D60067541F /* ContentView.swift in Sources */,
-				975E08F92A87BC200067541F /* SomeBootcamp.swift in Sources */,
+				975E08F92A87BC200067541F /* 1_25_Bootcamp.swift in Sources */,
 				975E08EA2A87B6D60067541F /* SwiftfulThinkingBootcampApp.swift in Sources */,
+				975E08FB2A8808710067541F /* 26_50_Bootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
